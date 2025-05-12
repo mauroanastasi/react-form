@@ -22,9 +22,9 @@ function App() {
       <div className="container">
         <h1>Console List</h1>
         <ul className='list-group mb-3'>
-          {initialConsoles.map((initialConsole, index) => (
+          {consoles.map((console, index) => (
             <li key={index} className="list-group-item">
-              {initialConsole}
+              {console}
             </li>
           ))}
         </ul>
