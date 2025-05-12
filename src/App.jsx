@@ -19,7 +19,7 @@ function App() {
           ))}
         </ul>
       </div>
-      <form>
+      <form onSubmit={addConsole}>
         <div className="input-group mb-3">
           <input
             value={newConsole}
