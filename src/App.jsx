@@ -6,6 +6,16 @@ const initialConsoles = [
 
 function App() {
   const [newConsole, setNewConsole] = useState("");
+  const [consoles, setConsoles] = useState(initialConsoles);
+
+
+
+  const addConsole = (e) => {
+    e.preventDefault()
+    setConsoles([...consoles, newConsole])
+    setNewConsole("")
+
+  }
 
   return (
     <>
